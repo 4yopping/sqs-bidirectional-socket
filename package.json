@@ -1,0 +1,35 @@
+{
+  "name": "aws-bidirectional-socket",
+  "version": "1.0.1",
+  "description": "This is an example of bidirectional communication between 2 nodejs servers that saves logs in aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:4yopping/sqs-bidirectional-socket.git"
+  },
+  "keywords": [
+    "aws",
+    "sqs",
+    "socket",
+    "bidirectional",
+    "c2c"
+  ],
+  "author": "@Quantium",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4yopping/sqs-bidirectional-socket/issues"
+  },
+  "homepage": "https://github.com/4yopping/sqs-bidirectional-socket",
+  "dependencies": {
+    "aws-sdk": "^2.1.19"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1",
+    "supertest": "^0.15.0"
+  }
+}
