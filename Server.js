@@ -1,6 +1,6 @@
 var net = require("net");
 
-module.exports = function Server(host,sqs,qurl){ 
+module.exports = function Server(host,sqs,qurl){
 
     var params = {
         MessageBody: 'Server Created',
@@ -46,14 +46,15 @@ module.exports = function Server(host,sqs,qurl){
                 conn.write(JSON.stringify({response:'pong'}));
             }.bind(this),Math.round(Math.random()*1800)+1800);
         });
+
         conn.write(JSON.stringify({response:'pong'}));
-        
+
     });
 
     s.listen(61337, host, function () {
         console.log("Server: Listening");
             var p = {
-                    MessageBody:'Server: Listenging at ' + host,
+                    MessageBody:'Server: Listening ' + host,
                     QueueUrl: qurl
                 };
             sqs.sendMessage(p,function (err,data) {
