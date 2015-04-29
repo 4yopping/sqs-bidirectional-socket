@@ -1,6 +1,6 @@
 # sqs-bidirectional-socket
 [![Build Status](https://travis-ci.org/4yopping/sqs-bidirectional-socket.svg)](https://travis-ci.org/4yopping/sqs-bidirectional-socket)
-
+[![Inline docs](http://inch-ci.org/github/4yopping/sqs-bidirectional-socket.svg?branch=master)](http://inch-ci.org/github/4yopping/sqs-bidirectional-socket)
 This is an example of bidirectional communication between 2 nodejs servers that saves logs in aws
 
 ##Install
